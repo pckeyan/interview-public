@@ -44,8 +44,6 @@ src/main/java/com/weavelab/interview/
 src/main/resources/
   application.properties
   schema.sql
-docs/
-  rate-limiting-design.md   Design notes for the rate limiter
 ```
 
 ## Configuration
@@ -133,9 +131,6 @@ dispatcher does any work, including multipart parsing of large uploads.
 - **Global.** One abusive client can starve all others. Per-client buckets keyed by the
   bearer token would be a small extension of the same limiter class.
 - **Not persisted.** The bucket resets on restart.
-
-The full design, including alternatives considered and the test strategy, is in
-[`docs/rate-limiting-design.md`](docs/rate-limiting-design.md).
 
 ## Tests
 
