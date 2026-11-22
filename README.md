@@ -6,6 +6,7 @@ A simple CRM-style API server for managing contacts and files. Available in both
 
 - **Go**: Located in `go/` directory
 - **Java**: Located in `java/` directory (Spring Boot)
+  - See [`java/README.md`](java/README.md) for Java-specific details, including the request rate limiter.
 
 Both implementations share the same SQLite database schema and provide identical REST API endpoints.
 
